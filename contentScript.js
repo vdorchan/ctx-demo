@@ -1,6 +1,6 @@
 var port = chrome.runtime.connect();
 
-console.log('jiji')
+console.log('this message is from contentScript')
 
 window.addEventListener("message", function (event) {
   // We only accept messages from ourselves
