@@ -2,16 +2,37 @@
   "name": "crx-demo",
   "version": "1.0",
   "description": "Build an Extension!",
-  "permissions": ["activeTab", "tabs", "declarativeContent", "storage", "https://*/", "webRequest", "webRequestBlocking"],
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "declarativeContent",
+    "storage",
+    "https://*/",
+    "http://*/",
+    "webRequest",
+    "webRequestBlocking",
+    "cookies"
+  ],
   "options_page": "options.html",
   "content_scripts": [
     {
-      "matches": ["http://*/*", "https://*/*"],
-      "js": ["contentScript.js"]
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "js/contentScript.js"
+      ]
     }
   ],
   "background": {
-    "scripts": ["libs/jquery.min.js", "background.js"],
+    "scripts": [
+      "libs/md5.js",
+      "js/cookie.js",
+      "js/getToken.js",
+      "js/sign.js",
+      "js/background.js"
+    ],
     "persistent": true
   },
   "page_action": {

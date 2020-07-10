@@ -16,7 +16,6 @@ function setHeader(headers, header) {
     }
   }
   if (!hasSet) {
-    console.log({header})
     headers.push(header);
   }
 }

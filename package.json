@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "md5": "^2.2.1",
+    "node-fetch": "^2.6.0"
+  },
+  "name": "crx-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/vdorchan/crx-demo.git",
+  "author": "vdorchan <vdorchan@gmail.com>",
+  "license": "MIT"
+}
