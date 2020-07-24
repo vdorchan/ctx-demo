@@ -27,7 +27,9 @@
   ],
   "background": {
     "scripts": [
+      "js/urls.js",
       "libs/md5.js",
+      "libs/jquery.min.js",
       "js/cookie.js",
       "js/getToken.js",
       "js/sign.js",
